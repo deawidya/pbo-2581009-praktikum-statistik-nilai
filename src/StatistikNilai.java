@@ -83,6 +83,10 @@ public class StatistikNilai {
                 diAtasRataRata++;
             }
         }
+
+        ArrayList<Integer> terurut = new ArrayList<>(daftar);
+        Collections.sort(terurut);
+
         input.close();
     }
 }
