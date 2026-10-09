@@ -87,6 +87,33 @@ public class StatistikNilai {
         ArrayList<Integer> terurut = new ArrayList<>(daftar);
         Collections.sort(terurut);
 
+
+        System.out.println();
+        System.out.println("===== STATISTIK NILAI KELAS =====");
+        System.out.println("Isi daftar        : " + daftar);
+        System.out.println("Jumlah nilai      : " + daftar.size());
+        System.out.printf("Rata-rata         : %.2f%n", rataRata);
+        System.out.println("Tertinggi         : " + tertinggi);
+        System.out.println("Terendah          : " + terendah);
+        System.out.println("Di atas rata-rata : " + diAtasRataRata);
+
+        System.out.println();
+        System.out.println("Distribusi grade:");
+
+        String[] namaGrade = {"A", "B", "C", "D", "E"};
+
+        for (int i = 0; i < jumlahGrade.length; i++) {
+            System.out.println(
+                    "  " + namaGrade[i] + " : " + jumlahGrade[i]
+            );
+        }
+
+        System.out.println();
+        System.out.println("Urutan asli     : " + daftar);
+        System.out.println("Setelah sorting : " + terurut);
+
+        input.close();
+
         input.close();
     }
 }
